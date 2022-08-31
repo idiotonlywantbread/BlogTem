@@ -55,6 +55,7 @@ CGTN-纪录,http://153.35.100.114:80/tlivectfree-cdn.ysp.cctv.cn/ysp/2010155403.
 直播中国,http://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8
 中国天气,http://140.207.241.3:8080/live/program/live/zgqx/1300000/mnf.m3u8#http://hls.weathertv.cn/tslslive/qCFIfHB/hls/live_sd.m3u8
 
+
 💎｜央视蓝光,#genre#
 CCTV1[1920*1080],http://39.135.138.58:18890/PLTV/88888888/224/3221225642/index.m3u8
 CCTV1[1920*1080],http://39.135.138.58:18890/PLTV/88888888/224/3221225918/index.m3u8
@@ -147,6 +148,7 @@ CCTV14[1920*1080],http://39.134.65.173/PLTV/88888888/224/3221225674/index.m3u8
 CCTV17[1920*1080],http://39.134.65.181/PLTV/88888888/224/3221225708/index.m3u8
 CCTV17[1920*1080],http://39.134.65.183/PLTV/88888888/224/3221225708/index.m3u8
 
+
 电影,#genre#
 CHC动作电影,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226465/index.m3u8#http://117.148.179.138/PLTV/88888888/224/3221231580/index.m3u8
 CHC高清电影,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226463/index.m3u8
@@ -171,6 +173,7 @@ NewTV动作电影,http://39.135.55.105:6610/PLTV/88888888/224/3221225879/index.m
 北京IPTV萌宠TV,http://39.134.134.84/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226555/index.m3u8?servicetype=1&icpid=&accounttype=1&limitflux=-1&limitdur=-1&GuardEncType=2&accountinfo=3QGHZfaujB8rRCsAsCvwpxxlHr4QY7xmzJA0CWZ2m2oFrdR%2B0WqiDAHoOrKmOBjJo1DAVyGMxV75D0k9A8UW52%2FrO%2F0g1FiOsgmHLskIhGej57NNTIcVyR%2FC8%2FqFakBOSDD3mErwuVWF5DqfHIW%2FMQ%3D%3D%3A20211105223205%2C10000100000000050000000003887495%2CF6D75A298389DD1E7C3B7D397327CA23%2C-1%2C0%2C1%2C%2C%2C2%2C%2C%2CEND
 东方影视,http://117.148.179.166/PLTV/88888888/224/3221231639/index.m3u8
 杭州影视,http://112.17.40.247/PLTV/88888888/224/3221229377/index.m3u8#http://117.148.179.133/PLTV/88888888/224/3221229377/index.m3u8#http://112.15.230.40/PLTV/88888888/224/3221230500/index.m3u8
+
 
 卫视,#genre#
 浙江卫视,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225703/index.m3u8#http://hw-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221225703/index.m3u8#http://153.35.100.114:80/tlivectfree-cdn.ysp.cctv.cn/ysp/2000295503.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225798/index.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226199/index.m3u8#http://117.148.179.140/PLTV/88888888/224/3221229352/index.m3u8
@@ -210,6 +213,7 @@ NewTV动作电影,http://39.135.55.105:6610/PLTV/88888888/224/3221225879/index.m
 兵团卫视,http://117.148.179.162/PLTV/88888888/224/3221231469/index.m3u8
 三沙卫视,http://pull2.ssws.tv/live/SswsTV20210803.m3u8
 延边卫视,http://39.135.138.58:18890/PLTV/88888888/224/3221226201/index.m3u8
+
 
 
 地方,#genre#
@@ -253,8 +257,14 @@ SiTV新视觉,http://140.207.241.3:8080/live/program/live/xsjhd/4000000/d1.m3u8
 幸福彩,http://117.148.179.156/PLTV/88888888/224/3221231730/index.m3u8
 
 
-bilibili,#genre#
-数码时代,http://117.148.179.160/PLTV/88888888/224/32212229419/index.m3u8
+🅱｜Bilibili,#genre#
+EdmundDZhang,https://d1--ov-gotcha105.bilivideo.com/live-bvc/804929/live_433351_3463687_bluray.m3u8?expires=1661909025&len=0&oi=1878829136&pt=h5&qn=10000&trid=1003bf2f35fdc9bf4d14a3cfab2fd0a91040&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=ov-gotcha105&sign=9e00d676eece0a1b70bc3e6899757c52&sk=e3f89e83c4b117d36c78e132367d4c7f&p2p_type=0&src=57345&sl=6&free_type=0&pp=rtmp&machinezone=jd&source=onetier&site=ce9ada58088acf08fb5baa1f53509bca&order=1
+全职猎人重制版,https://d1--ov-gotcha105.bilivideo.com/live-bvc/832143/live_4898624_3135355.m3u8?expires=1661909347&len=0&oi=1878829136&pt=h5&qn=10000&trid=1003092bf35cab7a483d89d8eb5016389027&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=ov-gotcha105&sign=a22fbb24139460709ef22e67c304e69e&sk=cde2e46b6fc87945264e4b66cc3b6e17&p2p_type=0&src=57345&sl=1&free_type=0&pp=srt&machinezone=ylf&source=onetier&site=43ae452c8ac7cbc304b851a6fd95952d&order=1
+中华小当家,https://d1--ov-gotcha105.bilivideo.com/live-bvc/212895/live_347143_4425426.m3u8?expires=1661909469&len=0&oi=1878829136&pt=h5&qn=10000&trid=1003ab5608ba119b44bbbb3a29e47ab84712&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=ov-gotcha105&sign=2742809bba791777997c96dd1e9c5200&sk=8652c12a1b4529d962f27c7b9dd21775&p2p_type=0&src=57345&sl=1&free_type=0&pp=rtmp&machinezone=ylf&source=onetier&site=2ff1589e503f728ad7a86e7daf0e4f05&order=1
+哆啦A梦台配剧场版,https://d1--ov-gotcha105.bilivideo.com/live-bvc/192817/live_198612423_8523636.m3u8?expires=1661910500&len=0&oi=1878829136&pt=h5&qn=10000&trid=1003241c1c323c234dd5a8635be6011eecb6&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=ov-gotcha105&sign=f25c43fce094fcdeaff4011779e80563&sk=f4c9b4af77f4cbf36c0953e55e0a3676&p2p_type=0&src=57345&sl=1&free_type=0&pp=rtmp&machinezone=ylf&source=onetier&site=b399fc8aa7f51be6751a2627526bf28e&order=1
+猎场,https://d1--ov-gotcha105.bilivideo.com/live-bvc/720816/live_28016369_15792090.m3u8?expires=1661910705&len=0&oi=1878829136&pt=h5&qn=10000&trid=1003bea02e42aefc4753b71ff2c16801ece0&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=ov-gotcha105&sign=cb8087b7694dd2c0a1d1f4d4a2179aba&sk=fc3072921ebf2d32a71913cd368774e1&p2p_type=0&src=57345&sl=1&free_type=0&pp=rtmp&machinezone=ylf&source=onetier&site=6ad2dac253a3a302d5f2281884e6afd7&order=1
+猎场,https://d1--ov-gotcha105.bilivideo.com/live-bvc/720816/live_28016369_15792090.m3u8?expires=1661910705&len=0&oi=1878829136&pt=h5&qn=10000&trid=1003bea02e42aefc4753b71ff2c16801ece0&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=ov-gotcha105&sign=cb8087b7694dd2c0a1d1f4d4a2179aba&sk=fc3072921ebf2d32a71913cd368774e1&p2p_type=0&src=57345&sl=1&free_type=0&pp=rtmp&machinezone=ylf&source=onetier&site=6ad2dac253a3a302d5f2281884e6afd7&order=1
+
 
 🦊｜少儿频道,#genre#
 哆啦A梦新番,http://zzy789.xyz/bili.php?id=482946
@@ -283,6 +293,8 @@ bilibili,#genre#
 X百变小樱,http://zzy789.xyz/bili.php?id=34340
 经典动漫（推理、童年、灵异）,http://zzy789.xyz/bili.php?id=4089143
 我们裸熊,http://zzy789.xyz/bili.php?id=11168667
+
+
 
 🐳｜斗鱼电影,#genre#
 斗鱼电影HD1,http://124.223.212.38:83/douyu/4246519
@@ -345,6 +357,8 @@ X百变小樱,http://zzy789.xyz/bili.php?id=34340
 斗鱼电影30,http://124.223.212.38:83/douyu/805235
 斗鱼电影31,http://124.223.212.38:83/douyu/6655271
 斗鱼电影4K,http://124.223.212.38:83/douyu/9249162
+
+
 
 🐬｜斗鱼影视,#genre#
 斗鱼电视剧HD1,http://124.223.212.38:83/douyu/2838296
@@ -413,6 +427,8 @@ X百变小樱,http://zzy789.xyz/bili.php?id=34340
 斗鱼歌舞1,http://124.223.212.38:83/douyu/6266000
 斗鱼歌舞2,http://124.223.212.38:83/douyu/5628327
 斗鱼综艺HD1,http://124.223.212.38:83/douyu/131977
+
+
 
 🚤｜港澳台,#genre#
 4民視第一台,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv003&nid=1
@@ -507,6 +523,8 @@ HTV4,https://livecdn.fptplay.net/sdb/htv4_hls.smil/chunklist_b2500000.m3u8
 中天新闻,http://123.51.230.124:8535/.m3u8
 中天新闻,http://60.251.39.247:8504/http/192.168.77.24:8081/hls/78/80/ch63max.m3u8
 台视,http://123.51.229.65:18543/http/192.168.1.9:8081/hls/72/814/ch46.m3u8
+
+
 
 其他,#genre#
 IHOT-Y+,http://live.aikan.miguvideo.com/PLTV/88888888/224/3221230226/index.m3u8#http://117.148.179.146/PLTV/88888888/224/3221230226/index.m3u8
