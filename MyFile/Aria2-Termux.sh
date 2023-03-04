@@ -88,7 +88,7 @@ if [[ $EUID -eq 0 ]]; then
 [!] 安装全过程不需要 ROOT 权限,且以 ROOT 权限运行可能会带来一些无法预料的问题
 [!] 为了您的设备安全，请避免在任何情况下以 ROOT 用户运行安装脚本
 	"
-
+	exit 1
 fi
 if [[ -d /system/app && -d /system/priv-app ]]; then
 	systeminfo="Android $(getprop ro.build.version.release)"
