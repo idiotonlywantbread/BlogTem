@@ -1,0 +1,307 @@
+const htmlContent = `
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paperkite-Pikpak-version1.0.0</title>
+    <script type="module" crossorigin src="/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/index.css">
+    <meta name="description" content="PaperKite-PIKPAK为PIKPAK的第三方管理工具，已解除官方因地区无法生成分享链接的限制，支持创建多个文件夹分享链接，且支持转存来自他人的PikPak分享链接资源。">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+`;
+
+
+async function get_css() {
+  const url = 'https://paperkiteidleplus.top/document/paperkite_pikpak/100/index-Dwd9jEsS.css'
+  const options = {
+    method: 'GET',
+    headers: {
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'cache-control': 'no-cache',
+      pragma: 'no-cache',
+      'sec-ch-ua': '"Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0'
+    }
+  };
+
+  const response = await fetch(url, options);
+  return await response.text()
+}
+
+async function get_js() {
+  const url = 'https://paperkiteidleplus.top/document/paperkite_pikpak/100/index-DEcMD2nD.js'
+  const options = {
+
+    method: 'GET',
+    headers: {
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'cache-control': 'no-cache',
+      pragma: 'no-cache',
+      'sec-ch-ua': '"Microsoft Edge";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+      'sec-fetch-dest': 'document',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-site': 'none',
+      'sec-fetch-user': '?1',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0'
+    }
+  };
+
+  const response = await fetch(url, options);
+  return await response.text()
+}
+
+
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function pikpak_login(request) {
+  const client_id = 'YUMx5nI8ZU8Ap8pm';
+  const client_secret = 'dbw2OtmVEeuUvIptb1Coyg';
+  const username = request['username'];
+  const password = request['password'];
+
+  if (!username || !password) {
+    return new Response('Username and password must be provided as query parameters', { status: 400 });
+  }
+
+  const tokenUrl = 'https://user.mypikpak.com/v1/auth/token';
+
+  const headers = new Headers();
+  headers.set('Authorization', 'Basic ' + btoa(client_id + ':' + client_secret));
+  headers.set('Content-Type', 'application/x-www-form-urlencoded');
+
+  const body = new URLSearchParams();
+  body.append('grant_type', 'password');
+  body.append('username', username);
+  body.append('password', password);
+  body.append('client_id', client_id);
+  body.append('client_secret', client_secret);
+
+  try {
+    const response = await fetch(tokenUrl, {
+      method: 'POST',
+      headers: headers,
+      body: body
+    });
+
+    if (response.status === 200) {
+      const token = await response.json();
+      return new Response(JSON.stringify(token), { status: 200, headers: { 'Content-Type': 'application/json' } });
+    } else {
+      const errorText = await response.text();
+      return new Response(errorText, { status: response.status });
+    }
+  } catch (error) {
+    return new Response('Internal Server Error', { "status": 500 });
+  }
+}
+async function pikpak_init(request) {
+  const action = request['action'];
+  const client_id = request['client_id'];
+  const client_version = request['client_version'];
+  const device_id = request['device_id'];
+  const sign = request['sign'];
+  const timestamp = request['timestamp'];
+  const user_id = request['user_id'];
+  const captcha_token = request['captcha_token'];
+  const package_name = request['package_name']
+  const url = "https://user.mypikpak.com/v1/shield/captcha/init"
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"',
+      'x-provider-name': 'NONE',
+      'x-sdk-version': '7.0.7',
+      'x-device-sign': 'wdi10.' + device_id + 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+      'x-os-version': 'Win32',
+      'x-net-work-type': 'NONE',
+      'sec-ch-ua-platform': '"Windows"',
+      'x-platform-version': '1',
+      'x-protocol-version': '301',
+      'x-client-version': '1.0.0',
+      'sec-ch-ua-mobile': '?0',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+      'content-type': 'application/json',
+      Referer: 'https://mypikpak.com/',
+      'x-client-id': client_id,
+      'x-device-model': 'chrome/126.0.0.0',
+      'x-device-id': device_id,
+      'x-device-name': 'PC-Chrome'
+    },
+    body: JSON.stringify({ "client_id": client_id, "action": action, "device_id": device_id, "captcha_token": captcha_token, "meta": { "captcha_sign": sign, "client_version": client_version, "package_name": package_name, "user_id": user_id, "timestamp": timestamp } })
+  };
+
+  const response = await fetch(url, options);
+  return await response;
+}
+async function pikpak_files(request) {
+  const device_id = request['device_id'];
+  const captcha_token = request['captcha_token'];
+  const access_token = request['access_token'];
+  const parent_id = request['parent_id'];
+  const url = 'https://api-drive.mypikpak.com/drive/v1/files?thumbnail_size=SIZE_MEDIUM&limit=500&parent_id=' + parent_id + '&with_audit=true&filters={"phase":{"eq":"PHASE_TYPE_COMPLETE"},"trashed":{"eq":false}}'
+
+  const options = {
+    method: 'GET',
+    headers: {
+      'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"',
+      'x-captcha-token': captcha_token,
+      'Accept-Language': 'zh-CN',
+      'sec-ch-ua-mobile': '?0',
+      Authorization: 'Bearer ' + access_token,
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+      'content-type': 'application/json',
+      Referer: 'https://mypikpak.com/',
+      'x-device-id': device_id,
+      'sec-ch-ua-platform': '"Windows"'
+    }
+  };
+
+  const response = await fetch(url, options);
+  return await response;
+}
+async function pikpak_share(request) {
+  const device_id = request['device_id'];
+  const captcha_token = request['captcha_token'];
+  const access_token = request['access_token'];
+  const file_ids = request['file_ids'];
+  const url = "https://api-drive.mypikpak.com/drive/v1/share"
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"',
+      'x-captcha-token': captcha_token,
+      'Accept-Language': 'zh-CN',
+      'sec-ch-ua-mobile': '?0',
+      Authorization: 'Bearer ' + access_token,
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+      'content-type': 'application/json',
+      Referer: 'https://mypikpak.com/',
+      'x-device-id': device_id,
+      'sec-ch-ua-platform': '"Windows"'
+    },
+    body: JSON.stringify({ "file_ids": file_ids, "share_to": "publiclink", "expiration_days": -1, "pass_code_option": "NOT_REQUIRED" })
+  };
+
+  const response = await fetch(url, options);
+  return await response;
+}
+
+async function get_download(request) {
+  const device_id = request['device_id'];
+  const captcha_token = request['captcha_token'];
+  const access_token = request['access_token'];
+  const client_id = request['client_id'];
+  const originalUrl = request['url'];
+  const restore_url = "https://api-drive.mypikpak.com/drive/v1/share/restore"
+
+  const paperkite_options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ "url": originalUrl })
+
+  }
+  const paperkite_response = await fetch("https://paperkiteidleplus.top/document/paperkite_pikpak/pikpakCodeToken.php", paperkite_options);
+
+  const paperkite_data = await paperkite_response.json();
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"',
+      'x-captcha-token': captcha_token,
+      'Accept-Language': 'zh-CN',
+      'sec-ch-ua-mobile': '?0',
+      Authorization: 'Bearer ' + access_token,
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+      'content-type': 'application/json',
+      Referer: 'https://mypikpak.com/',
+      'x-client-id': client_id,
+      'x-device-id': device_id,
+      'sec-ch-ua-platform': '"Windows"'
+    },
+    body: JSON.stringify({ "share_id": paperkite_data['share_id'], "pass_code_token": paperkite_data['pass_code_token'], "params": { "trace_file_ids": paperkite_data['trace_file_ids'] } })
+  };
+
+  const restore_response = await fetch(restore_url, options);
+  return await restore_response;
+}
+const routes = {
+  'GET': {
+    '/': async (request) => {
+      return new Response(htmlContent, { headers: { 'Content-Type': 'text/html' } });
+    },
+    '/index.css': async (request) => {
+      return new Response(await get_css(), { headers: { 'Content-Type': 'text/css' } });
+    },
+    '/index.js': async (request) => {
+      return new Response(await get_js(), { headers: { 'Content-Type': 'application/javascript' } });
+    },
+
+  },
+  'POST': {
+    '/pikpakLogin.php': async (request) => {
+      const body = await request.text();
+      const response = await pikpak_login(JSON.parse(body));
+      return (response);
+    },
+    '/pikpakInit.php': async (request) => {
+      const body = await request.text();
+      const response = await pikpak_init(JSON.parse(body));
+      return (response);
+    },
+    '/pikpakFiles.php': async (request) => {
+      const body = await request.text();
+      const response = await pikpak_files(JSON.parse(body));
+      return (response);
+    },
+    '/pikpakShare.php': async (request) => {
+      const body = await request.text();
+      const response = await pikpak_share(JSON.parse(body));
+      return (response);
+    },
+    '/pikpakDownload.php': async (request) => {
+      const body = await request.text();
+      const response = await get_download(JSON.parse(body));
+      return (response);
+    }
+  },
+};
+
+addEventListener('fetch', (event) => {
+  event.respondWith(handleRequest(event.request));
+});
+
+async function handleRequest(request) {
+  const method = request.method;
+  const url = new URL(request.url).pathname;
+
+  if (routes[method] && routes[method][url]) {
+    return await routes[method][url](request); // 调用对应的处理函数
+  } else {
+    return new Response('404 Not Found', { status: 404, headers: { 'Content-Type': 'text/html' } });
+  }
+}
+
