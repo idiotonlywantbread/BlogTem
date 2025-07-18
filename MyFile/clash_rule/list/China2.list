@@ -4,11 +4,13 @@
 # Erii_自增
 DOMAIN-SUFFIX,sport.pendy.dpdns.org
 DOMAIN-SUFFIX,i.ibread.icu
+#DOMAIN-SUFFIX,o.ibread.icu
 DOMAIN-SUFFIX,tw-ty-line-11-1-5.sudatech.store
 DOMAIN-SUFFIX,surrit.com
 DOMAIN-SUFFIX,r.inews.qq.com
 DOMAIN-SUFFIX,myip.ipip.net
-#DOMAIN-SUFFIX,o.ibread.icu
+#DOMAIN-SUFFIX,github.moeyy.xyz
+
 
 #IP-CIDR,8.8.8.8/32,no-resolve
 #IP-CIDR,8.8.4.4/32,no-resolve
