@@ -42,6 +42,7 @@ DOMAIN-SUFFIX,bptv.freetv.top
 DOMAIN-SUFFIX,mojie.app
 
 
+
 # IP-CIDR,8.8.8.8/32,no-resolve
 # IP-CIDR,8.8.4.4/32,no-resolve
 IP-CIDR,1.1.1.1/32,no-resolve
