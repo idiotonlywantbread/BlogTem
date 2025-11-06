@@ -49,6 +49,8 @@ DOMAIN-SUFFIX,618208.xyz
 # 本机指定端口走流量
 DST-PORT,5243,PROXY
 
+
+# 如果有 DNS 服务器的 IP 需要避免代理
 # IP-CIDR,8.8.8.8/32,no-resolve
 # IP-CIDR,8.8.4.4/32,no-resolve
 IP-CIDR,1.1.1.1/32,no-resolve
