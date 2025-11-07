@@ -45,6 +45,7 @@ DOMAIN-SUFFIX,javdb.com
 DOMAIN-SUFFIX,lite.cn2gias.uk
 DOMAIN-SUFFIX,search.kiteyuan.info
 DOMAIN-SUFFIX,618208.xyz
+DOMAIN-SUFFIX,fg8m.r8hr7.net
 
 # 本机指定端口走流量
 DST-PORT,5243,PROXY
