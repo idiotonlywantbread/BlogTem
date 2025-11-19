@@ -48,6 +48,12 @@ DOMAIN-SUFFIX,618208.xyz
 DOMAIN-SUFFIX,fg8m.r8hr7.net
 DOMAIN-SUFFIX,tianmiao8152-my.sharepoint.com
 DOMAIN-SUFFIX,graph.microsoft.com
+DOMAIN-SUFFIX,okemby.org
+DOMAIN-SUFFIX,fg8m.r8hr7.net
+DOMAIN-SUFFIX,aowu.tv
+DOMAIN-SUFFIX,xsijishe.com
+DOMAIN-SUFFIX,xn--sss604efuw.com
+
 
 # 本机指定端口走流量
 DST-PORT,5243,PROXY
