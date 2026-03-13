@@ -62,6 +62,17 @@ DOMAIN-SUFFIX,www.googletagmanager.com
 DOMAIN-SUFFIX,www.gstatic.cn
 DOMAIN-SUFFIX,www.recaptcha.net
 
+# missav
+DOMAIN-SUFFIX,cdn.wheelroot.com
+DOMAIN-SUFFIX,creative.myavlive.com
+DOMAIN-SUFFIX,fourhoi.com
+DOMAIN-SUFFIX,go.myavlive.com
+DOMAIN-SUFFIX,img.doppiocdn.com
+DOMAIN-SUFFIX,missav.live
+DOMAIN-SUFFIX,pxl.wheelroot.com
+DOMAIN-SUFFIX,static-proxy.strpst.com
+DOMAIN-SUFFIX,tsvideo.saawsedge.com
+DOMAIN-SUFFIX,www.googletagmanager.com
 
 # new-api 公益站
 DOMAIN-SUFFIX,qaq.al
