@@ -35,7 +35,6 @@ DOMAIN-SUFFIX,bptv.freetv.top
 DOMAIN-SUFFIX,mojie.app
 DOMAIN-SUFFIX,missav.ai 
 DOMAIN-SUFFIX,javdb.com 
-DOMAIN-SUFFIX,lite.cn2gias.uk 
 DOMAIN-SUFFIX,search.kiteyuan.info 
 DOMAIN-SUFFIX,618208.xyz 
 DOMAIN-SUFFIX,fg8m.r8hr7.net 
@@ -46,10 +45,48 @@ DOMAIN-SUFFIX,fg8m.r8hr7.net
 DOMAIN-SUFFIX,aowu.tv 
 DOMAIN-SUFFIX,xsijishe.com 
 DOMAIN-SUFFIX,xn--sss604efuw.com
+DOMAIN-SUFFIX,pornhub.com
 
-# 本机指定端口走流量 
-DST-PORT,5243 
-DST-PORT,11119
+# ppp.porn
+DOMAIN-SUFFIX,cdn.plyr.io
+DOMAIN-SUFFIX,cdn0.ppp.porn
+DOMAIN-SUFFIX,cdn1.ppp.porn
+DOMAIN-SUFFIX,fonts.googleapis.com
+DOMAIN-SUFFIX,hdikos.ppp.porn
+DOMAIN-SUFFIX,imasdk.googleapis.com
+DOMAIN-SUFFIX,poweredby.jads.co
+DOMAIN-SUFFIX,ppp.porn
+DOMAIN-SUFFIX,t.nettrck.store
+DOMAIN-SUFFIX,vast.yomeno.xyz
+DOMAIN-SUFFIX,www.googletagmanager.com
+DOMAIN-SUFFIX,www.gstatic.cn
+DOMAIN-SUFFIX,www.recaptcha.net
+
+
+# new-api 公益站
+DOMAIN-SUFFIX,qaq.al
+DOMAIN-SUFFIX,121628.xyz
+DOMAIN-SUFFIX,freeapi.dgbmc.top
+DOMAIN-SUFFIX,x.ainiaini.xyz
+DOMAIN-SUFFIX,api.mihoyo.bio
+DOMAIN-SUFFIX,api.925214.xyz
+DOMAIN-SUFFIX,sub2api.9977.me
+DOMAIN-SUFFIX,www.nlacloud.shop
+DOMAIN-SUFFIX,anyrouter.top
+DOMAIN-SUFFIX,api.freestyle.cc.cd
+DOMAIN-SUFFIX,anthorpic.us.ci
+DOMAIN-SUFFIX,newapi.sorai.me
+hDOMAIN-SUFFIX,newapi.zhenhaoji.qzz.io
+DOMAIN-SUFFIX,ai.huan666.de
+DOMAIN-SUFFIX,api.hongshi.ggff.net
+DOMAIN-SUFFIX,lx.lxsummer.cloud
+DOMAIN-SUFFIX,aidrouter.qzz.io
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,proxy-manager-ggeu.onrender.com
+
+# 指定端口走流量 
+# DST-PORT,5243 
+# DST-PORT,11119
 
 # IP-CIDR,8.8.8.8/32,no-resolve
 # IP-CIDR,8.8.4.4/32,no-resolve
