@@ -48,18 +48,35 @@ DOMAIN-SUFFIX,xn--sss604efuw.com
 DOMAIN-SUFFIX,pornhub.com
 
 # ppp.porn
-DOMAIN-SUFFIX,cdn.plyr.io
-DOMAIN-SUFFIX,cdn0.ppp.porn
+#DOMAIN-SUFFIX,cdn.plyr.io
+#DOMAIN-SUFFIX,cdn0.ppp.porn
+#DOMAIN-SUFFIX,cdn1.ppp.porn
+#DOMAIN-SUFFIX,fonts.googleapis.com
+#DOMAIN-SUFFIX,hdikos.ppp.porn
+#DOMAIN-SUFFIX,imasdk.googleapis.com
+#DOMAIN-SUFFIX,poweredby.jads.co
+#DOMAIN-SUFFIX,ppp.porn
+#DOMAIN-SUFFIX,t.nettrck.store
+#DOMAIN-SUFFIX,vast.yomeno.xyz
+#DOMAIN-SUFFIX,www.googletagmanager.com
+#DOMAIN-SUFFIX,www.gstatic.cn
+#DOMAIN-SUFFIX,www.recaptcha.net
+
+DOMAIN-SUFFIX,ads.adxadserv.com
 DOMAIN-SUFFIX,cdn1.ppp.porn
+DOMAIN-SUFFIX,creative.xxxvjmp.com
+DOMAIN-SUFFIX,edge-hls.growcdnssedge.com
 DOMAIN-SUFFIX,fonts.googleapis.com
-DOMAIN-SUFFIX,hdikos.ppp.porn
-DOMAIN-SUFFIX,imasdk.googleapis.com
-DOMAIN-SUFFIX,poweredby.jads.co
+DOMAIN-SUFFIX,fonts.gstatic.com
+DOMAIN-SUFFIX,go.xxxvjmp.com
+DOMAIN-SUFFIX,img.doppiocdn.com
+DOMAIN-SUFFIX,media-hls.growcdnssedge.com
 DOMAIN-SUFFIX,ppp.porn
-DOMAIN-SUFFIX,t.nettrck.store
-DOMAIN-SUFFIX,vast.yomeno.xyz
-DOMAIN-SUFFIX,www.googletagmanager.com
-DOMAIN-SUFFIX,www.gstatic.cn
+DOMAIN-SUFFIX,r.trackwilltrk.com
+DOMAIN-SUFFIX,static.adxadserv.com
+DOMAIN-SUFFIX,static.cloudflareinsights.com
+DOMAIN-SUFFIX,stripchat.io
+DOMAIN-SUFFIX,www.gstatic.com
 DOMAIN-SUFFIX,www.recaptcha.net
 
 # missav
