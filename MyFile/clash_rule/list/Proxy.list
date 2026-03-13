@@ -63,15 +63,25 @@ DOMAIN-SUFFIX,www.gstatic.cn
 DOMAIN-SUFFIX,www.recaptcha.net
 
 # missav
+DOMAIN-SUFFIX,missav.ai
+DOMAIN-SUFFIX,missav.live
+DOMAIN-SUFFIX,client-rapi-missav.recombee.com
+DOMAIN-SUFFIX,cdn.tsyndicate.com
 DOMAIN-SUFFIX,cdn.wheelroot.com
 DOMAIN-SUFFIX,creative.myavlive.com
 DOMAIN-SUFFIX,fourhoi.com
 DOMAIN-SUFFIX,go.myavlive.com
+DOMAIN-SUFFIX,go.xlivrdr.com
 DOMAIN-SUFFIX,img.doppiocdn.com
-DOMAIN-SUFFIX,missav.live
+DOMAIN-SUFFIX,pxl.tsyndicate.com
 DOMAIN-SUFFIX,pxl.wheelroot.com
+DOMAIN-SUFFIX,region1.google-analytics.com
+DOMAIN-SUFFIX,static-cdn.strpst.com
 DOMAIN-SUFFIX,static-proxy.strpst.com
+DOMAIN-SUFFIX,stripchat.global
+DOMAIN-SUFFIX,tsyndicate.com
 DOMAIN-SUFFIX,tsvideo.saawsedge.com
+DOMAIN-SUFFIX,tsvideo.sacdnssedge.com
 DOMAIN-SUFFIX,www.googletagmanager.com
 
 # new-api 公益站
